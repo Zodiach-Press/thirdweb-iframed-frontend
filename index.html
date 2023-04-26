@@ -1,6 +1,7 @@
 <html>
   <head>
-    <title>"Welcome to Zodiach, Maine"</title>
+    <title>Ȿ⟅raᴎᧃဧ, Ɗᐊrꝃ, & ⱮꭚஎeᎡɨoͧ⟆</title>
+    <favicon href="./images/favicon.ico" />
     <style>
       body {
         width: 98%;
@@ -12,7 +13,7 @@
 
       h1 {color: gold;}
 
-      h3, p {color: #e6e6e6;}
+      h3, p {color: #e6e6e6;   font-family: "Arial Unicode MS", Arial, sans-serif;}
 
       #left-arrow {background: url('./images/left-arrow-49.png') no-repeat center center;}
 
@@ -92,7 +93,7 @@
 
       .tagline {
         position: absolute;
-        top: 37px;
+        top: 39px;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -100,7 +101,7 @@
 
       .footer {
         position: absolute;
-        bottom: 2.5em;
+        bottom: 3.5em;
         width: 98%;
         height: 2.5rem;
         color: #e6e6e6;
@@ -131,7 +132,7 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
       <div id="token-selector">
-        <img id = "logo" src="./images/Zodiach-z.png" alt="Logo" />
+        <img id = "logo" src="./images/Zodiach-Z.png" alt="Logo" />
         <div id="tokenid-selector">
           <button id="left-arrow">←</button>
           <input type="number" id="token-id" min="0" max="4294967295">
@@ -152,7 +153,7 @@
       <script>
         $(document).ready(function() {
           // Initialize the token ID input field with a default value
-          const maxTokenID = 4;
+          const maxTokenID = 9;
           $("#token-id").val(4);
           $("#chain-id").val("Polygon+Mainnet%22%2C%22chain%22%3A%22Polygon%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fpolygon.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22MATIC%22%2C%22symbol%22%3A%22MATIC%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22matic%22%2C%22chainId%22%3A137%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22polygon%22%7D");
           updateIFrameSrc();
